@@ -1,20 +1,20 @@
 import { v4 as randomUUID } from "uuid";
 
-export class Produto {
+export class Product {
    private _id: string = randomUUID();
-   private _price: string; 
    public _name: string;
+   private _price: number; 
    private _category: string; 
    private _imageUrl: string;
 
    constructor(
-    price: string,
     name: string,
+    price: number,
     category: string,
     imageUrl: string,
    ) {
-    this._price = price;
     this._name = name;
+    this._price = price;
     this._category = category;
     this._imageUrl = imageUrl;
    }

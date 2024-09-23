@@ -1,7 +1,11 @@
-import data from '../data.json'
+import data from "../data.json";
+import { Product } from "./entities/product";
 
-console.log(data[0].image)
-
-for (let index = 0; index < 9; index++) {
-    
+for (const product of data) {
+  new Product(
+    product.name,
+    product.price,
+    product.category,
+    product.image.desktop
+  );
 }
