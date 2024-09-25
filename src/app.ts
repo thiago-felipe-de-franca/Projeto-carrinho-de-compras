@@ -9,3 +9,4 @@ for (const product of data) {
     product.image.desktop
   );
 }
+

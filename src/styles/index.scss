@@ -1,52 +1,121 @@
 @font-face {
-    font-family: 'Red Hat Text';
-    src: url('../assets/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
-  }
-  
-  :root {
-    $primary-color: hsl(14, 86%, 42%);
-    $rose-900: hsl(14, 65%, 9%);
-    $rose-400: hsl(7, 20%, 60%);
-    $rose-100: hsl(13, 31%, 94%);
-    $rose-50: hsl(20, 50%, 98%);
-  }
+  font-family: "Red Hat Text";
+  src: url("../assets/fonts/RedHatText-VariableFont_wght.ttf")
+    format("truetype");
+}
 
-  body {
+$primary-color: hsl(14, 86%, 42%);
+$rose-50: hsl(20, 50%, 98%);
+$rose-100: hsl(13, 31%, 94%);
+$rose-300: hsl(14, 25%, 72%);
+$rose-400: hsl(7, 20%, 60%);
+$rose-500: hsl(12, 20%, 44%);
+$rose-900: hsl(14, 65%, 9%);
+
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  position: relative;
+  left: 100px;
+  .full-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.product-price {
+  color: $primary-color;
+  font-weight: 700;
+}
+
+.product-name {
+  font-weight: 600;
+  color: $rose-900;
+}
+
+.product-category {
+  font-size: 14px;
+  color: $rose-400;
+}
+
+.icon {
+  height: 40px;
+}
+
+.title {
+  padding-left: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: $rose-900;
+}
+
+.post-description {
+  padding-left: 100px;
+  padding-top: 30px;
+  .description {
     font-family: "Red Hat Text", sans-serif;
-  }
-  .container {
-    width: 250px;
-    height: 200px;
+    margin-bottom: 10px;
   }
 
-  .button {
+  .category {
+    font-weight: 400;
+    color: $rose-300;
+    font-size: 14px;
+  }
+
+  .name {
+    font-weight: 600;
+    color: $rose-900;
+    font-size: 16px;
+  }
+
+  .value {
+    font-weight: 700;
+    color: $primary-color;
+    font-size: 16px;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background-color: $rose-50;
+  padding: 3px 4px;
+  border-radius: 16px;
+  width: 120px;
+  height: 40px;
+
+  .cart-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .add-button {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.center {
   position: absolute;
   bottom: 0px;
   left: 50%;
   transform: translate(-50%, 50%);
 }
-
-  .product-price {
-    color: $primary-color;
-    font-weight: 700;
-  }
-  
-  .product-name {
-    font-weight: 600;
-    color: $rose-900
-  }
-  
-  .product-category {
-    font-size: 14px;
-    color: $rose-400
-  }
-  
-  .button {
-    background-color: $rose-100;
-    padding: 15px 20px;
-    border-radius: 16px;
-  }
-  
-  .icon {
-    height: 40px;
-  }
