@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Red Hat Text";
   src: url("../assets/fonts/RedHatText-VariableFont_wght.ttf")
@@ -19,6 +23,7 @@ $rose-900: hsl(14, 65%, 9%);
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+  // background-color: rgb(84, 84, 85);
 }
 
 body {
