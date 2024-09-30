@@ -17,6 +17,10 @@ export class Product {
     this._imageUrl = imageUrl;
   }
 
+  get id() {
+    return this._id;
+  }
+
   updateTotal() {
     this._total = this._price * this._quantity;
   }

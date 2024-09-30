@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @font-face {
   font-family: "Red Hat Text";
@@ -15,9 +15,6 @@ $rose-300: hsl(14, 25%, 72%);
 $rose-400: hsl(7, 20%, 60%);
 $rose-500: hsl(12, 20%, 44%);
 $rose-900: hsl(14, 65%, 9%);
-
-
-
 
 * {
   box-sizing: border-box;
@@ -36,6 +33,7 @@ body {
   background-color: grey;
   position: relative;
   left: 100px;
+
   .full-image{
     width: 100%;
     height: 100%;
@@ -45,20 +43,7 @@ body {
 
 .products {
   width: 1000px;
-}
-.product-price {
-  color: $primary-color;
-  font-weight: 700;
-}
-
-.product-name {
-  font-weight: 600;
-  color: $rose-900;
-}
-
-.product-category {
-  font-size: 14px;
-  color: $rose-400;
+  display: flex;
 }
 
 .icon {
