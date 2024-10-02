@@ -20,11 +20,11 @@ $rose-900: hsl(14, 65%, 9%);
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  // background-color: rgb(84, 84, 85);
 }
 
 body {
   font-family: "Red Hat Text", sans-serif;
+  background-color: $rose-100;
 }
 
 main {

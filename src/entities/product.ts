@@ -25,7 +25,7 @@ export class Product {
     productListHTML.innerHTML = `
     <div class="product">
         <div class="container m-4">
-          <img src="../assets/images/image-waffle-desktop.jpg" alt="" class="full-image">
+          <img src="${this._imageUrl}" alt="" class="full-image">
           <div class="button center">
             <img src="../assets/images/icon-add-to-cart.svg" alt="" class="cart-icon">
             <p class="add-button">Add to Cart</p>
