@@ -27,6 +27,11 @@ body {
   font-family: "Red Hat Text", sans-serif;
 }
 
+main {
+  display: flex;
+  width: 1500px;
+}
+
 .container {
   width: 200px;
   height: 200px;
@@ -43,6 +48,10 @@ body {
 
 .products {
   width: 1000px;
+  display: flex;
+}
+
+.cart{
   display: flex;
 }
 

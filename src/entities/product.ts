@@ -17,6 +17,28 @@ export class Product {
     this._imageUrl = imageUrl;
   }
 
+  toHTML() {
+    const productListHTML = document.getElementById("product-list");
+
+    if (!productListHTML) return;
+
+    productListHTML.innerHTML = `
+    <div class="product">
+        <div class="container m-4">
+          <img src="../assets/images/image-waffle-desktop.jpg" alt="" class="full-image">
+          <div class="button center">
+            <img src="../assets/images/icon-add-to-cart.svg" alt="" class="cart-icon">
+            <p class="add-button">Add to Cart</p>
+          </div>
+        </div>
+        <div class="post-description">
+          <p class="descripition category">Waffle</p>
+          <p class="descripition name">Waffle with Berries</p>
+          <p class="descripition value">$6.50</p>
+        </div>
+      </div>
+      `
+  }
   get id() {
     return this._id;
   }
